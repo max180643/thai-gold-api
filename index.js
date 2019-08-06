@@ -15,7 +15,7 @@ server.get('/', (req, res) => {
   )
 })
 
-server.get('/lastest', (req, res) => {
+server.get('/latest', (req, res) => {
   request(url, (error, response, html) => {
     if (!error && response.statusCode === 200) {
       const $ = cheerio.load(html)
