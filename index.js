@@ -30,7 +30,7 @@ server.get('/latest', (req, res) => {
           response: {
             date: date,
             update_time: update_time,
-            prices: {
+            price: {
               gold: {
                 buy: gold_buy,
                 sell: gold_sell,
