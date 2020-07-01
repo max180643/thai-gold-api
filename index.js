@@ -6,6 +6,8 @@ const server = express()
 const port = process.env.PORT || 5555
 const url = 'https://xn--42cah7d0cxcvbbb9x.com/'
 
+server.use(cors())
+
 server.get('/', (req, res) => {
   res.send({
       status: 'success',
@@ -64,5 +66,4 @@ server.get('*', (req, res) => {
   )
 })
 
-server.use(cors())
 server.listen(port, () => console.log('Server running at port %d.', port))
