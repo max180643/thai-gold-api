@@ -1,7 +1,7 @@
 const express = require('express')
 const request = require('request');
 const cheerio = require('cheerio');
-const bodyParser = require('body-parser')
+const cors = require('cors')
 const server = express()
 const port = process.env.PORT || 5555
 const url = 'https://xn--42cah7d0cxcvbbb9x.com/'
@@ -64,5 +64,5 @@ server.get('*', (req, res) => {
   )
 })
 
-server.use(bodyParser.json())
+server.use(cors())
 server.listen(port, () => console.log('Server running at port %d.', port))
