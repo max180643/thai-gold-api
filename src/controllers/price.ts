@@ -19,7 +19,7 @@ const priceHandler = async () => {
   const date = $(PRICE_CONFIG.SELECTOR.DATE).text().trim();
   const updateTime = $(PRICE_CONFIG.SELECTOR.UPDATE_TIME).text().trim();
   const goldBuy = $(PRICE_CONFIG.SELECTOR.GOLD_BUY).text().trim();
-  const goldSell = $(PRICE_CONFIG.SELECTOR.GOLD_BUY).text().trim();
+  const goldSell = $(PRICE_CONFIG.SELECTOR.GOLD_SELL).text().trim();
   const goldBarBuy = $(PRICE_CONFIG.SELECTOR.GOLD_BAR_BUY).text().trim();
   const goldSellBuy = $(PRICE_CONFIG.SELECTOR.GOLD_BAR_SELL).text().trim();
 
