@@ -45,7 +45,8 @@ This API is based on HTTPS requests and JSON responses. `https://thai-gold-api.h
     "update_time": "เวลา 14:52 น.",
     "price": {
       "gold": { "buy": "29,000.00", "sell": "29,000.00" },
-      "gold_bar": { "buy": "28,500.00", "sell": "28,400.00" }
+      "gold_bar": { "buy": "28,500.00", "sell": "28,400.00" },
+      "change": "-150"
     }
   }
 }

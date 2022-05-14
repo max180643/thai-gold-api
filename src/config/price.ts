@@ -12,6 +12,8 @@ const PRICE_CONFIG = {
       "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(2) > td:nth-child(3)",
     GOLD_BAR_SELL:
       "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(2) > td:nth-child(2)",
+    GOLD_PRICE_CHANGE:
+      "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(4) > td:nth-child(3)",
   },
 };
 

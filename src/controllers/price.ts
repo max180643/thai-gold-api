@@ -22,6 +22,9 @@ const priceHandler = async () => {
   const goldSell = $(PRICE_CONFIG.SELECTOR.GOLD_SELL).text().trim();
   const goldBarBuy = $(PRICE_CONFIG.SELECTOR.GOLD_BAR_BUY).text().trim();
   const goldSellBuy = $(PRICE_CONFIG.SELECTOR.GOLD_BAR_SELL).text().trim();
+  const goldPriceChange = $(PRICE_CONFIG.SELECTOR.GOLD_PRICE_CHANGE)
+    .text()
+    .trim();
 
   return {
     status: "success",
@@ -37,6 +40,7 @@ const priceHandler = async () => {
           buy: goldBarBuy,
           sell: goldSellBuy,
         },
+        change: goldPriceChange,
       },
     },
   };
