@@ -25,7 +25,10 @@ const priceHandler = async () => {
   const goldPriceChange = $(PRICE_CONFIG.SELECTOR.GOLD_PRICE_CHANGE)
     .text()
     .trim();
-
+ const goldBarPriceChange = $(PRICE_CONFIG.SELECTOR.GOLD_BAR_PRICE_CHANGE)
+    .text()
+    .trim();
+  
   return {
     status: "success",
     response: {
@@ -35,12 +38,13 @@ const priceHandler = async () => {
         gold: {
           buy: goldBuy,
           sell: goldSell,
+          change: goldPriceChange,
         },
         gold_bar: {
           buy: goldBarBuy,
           sell: goldSellBuy,
+          change: goldBarPriceChange,
         },
-        change: goldPriceChange,
       },
     },
   };
