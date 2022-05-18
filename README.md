@@ -41,12 +41,12 @@ This API is based on HTTPS requests and JSON responses. `https://thai-gold-api.h
 {
   "status": "success",
   "response": {
-    "date": "04 มกราคม 2565",
-    "update_time": "เวลา 14:52 น.",
+    "date": "18 พฤษภาคม 2565",
+    "update_time": "เวลา 16:37 น.",
     "price": {
-      "gold": { "buy": "29,000.00", "sell": "29,000.00" },
-      "gold_bar": { "buy": "28,500.00", "sell": "28,400.00" },
-      "change": "-150"
+      "gold": { "buy": "30,300.00", "sell": "29,167.84" },
+      "gold_bar": { "buy": "29,800.00", "sell": "29,700.00" },
+      "change": { "compare_previous": "+50", "compare_yesterday": "-100" }
     }
   }
 }

@@ -22,9 +22,22 @@ const priceHandler = async () => {
   const goldSell = $(PRICE_CONFIG.SELECTOR.GOLD_SELL).text().trim();
   const goldBarBuy = $(PRICE_CONFIG.SELECTOR.GOLD_BAR_BUY).text().trim();
   const goldSellBuy = $(PRICE_CONFIG.SELECTOR.GOLD_BAR_SELL).text().trim();
-  const goldPriceChange = $(PRICE_CONFIG.SELECTOR.GOLD_PRICE_CHANGE)
+  const priceComparePrevious = $(PRICE_CONFIG.SELECTOR.PRICE_COMPARE_PREVIOUS)
     .text()
     .trim();
+  const priceCompareYesterday = $(PRICE_CONFIG.SELECTOR.PRICE_COMPARE_YESTERDAY)
+    .text()
+    .trim()
+    .substring(7);
+
+  const formatPriceComparePrevious =
+    priceComparePrevious.charAt(0) === "-"
+      ? priceComparePrevious
+      : `+${priceComparePrevious}`;
+  const formatPriceCompareYesterday =
+    priceCompareYesterday.charAt(0) === "-"
+      ? priceCompareYesterday
+      : `+${priceCompareYesterday}`;
 
   return {
     status: "success",
@@ -40,7 +53,10 @@ const priceHandler = async () => {
           buy: goldBarBuy,
           sell: goldSellBuy,
         },
-        change: goldPriceChange,
+        change: {
+          compare_previous: formatPriceComparePrevious,
+          compare_yesterday: formatPriceCompareYesterday,
+        },
       },
     },
   };
