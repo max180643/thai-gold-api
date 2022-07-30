@@ -57,3 +57,14 @@ This API is based on HTTPS requests and JSON responses. `https://thai-gold-api.h
 ## Warning
 
 This API crawl data from ทองคําราคา.com and the API cannot handle URL in case of 404 yet
+
+## Environment variables
+
+create .env file
+
+```
+# Analytics (optional)
+TRACK_API_URL='' #umami-db-api
+UMAMI_WEBSITE_NAME=''
+UMAMI_WEBSITE_DOMAIN=''
+```
