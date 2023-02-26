@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  api:
+    build: .
+    container_name: thai-gold-api
+    ports:
+      - "3000:3000"
+    environment:
+      TRACK_API_URL: ${TRACK_API_URL}
+      UMAMI_WEBSITE_NAME: ${UMAMI_WEBSITE_NAME}
+      UMAMI_WEBSITE_DOMAIN: ${UMAMI_WEBSITE_DOMAIN}
+    restart: always
+    env_file:
+      - .env
