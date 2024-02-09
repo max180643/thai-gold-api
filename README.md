@@ -24,7 +24,7 @@ $ yarn start
 
 ## API
 
-This API is based on HTTPS requests and JSON responses. `https://api.chnwt.dev/thai-oil-api`
+This API is based on HTTPS requests and JSON responses. `https://api.chnwt.dev/thai-gold-api`
 
 ### Get latest gold prices
 
