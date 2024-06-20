@@ -24,7 +24,7 @@ $ yarn start
 
 ## API
 
-This API is based on HTTPS requests and JSON responses. `https://api.chnwt.dev/thai-gold-api`
+This API is based on HTTPS requests and JSON responses. `https://gold-th.plutopon.site/`
 
 ### Get latest gold prices
 
@@ -41,12 +41,25 @@ This API is based on HTTPS requests and JSON responses. `https://api.chnwt.dev/t
 {
   "status": "success",
   "response": {
-    "date": "18 พฤษภาคม 2565",
-    "update_time": "เวลา 16:37 น.",
+    "date": "04 เมษายน 2567",
+    "update": {
+      "round": "4",
+      "time": "14:24 น."
+    },
+    "gold_pure": "96.5%",
     "price": {
-      "gold": { "buy": "30,300.00", "sell": "29,167.84" },
-      "gold_bar": { "buy": "29,800.00", "sell": "29,700.00" },
-      "change": { "compare_previous": "+50", "compare_yesterday": "-100" }
+      "gold": {
+        "buy": "40,350.00",
+        "sell": "39,037.00"
+      },
+      "gold_bar": {
+        "buy": "39,850.00",
+        "sell": "39,750.00"
+      },
+      "change": {
+        "compare_previous": "-50",
+        "compare_yesterday": "+300"
+      }
     }
   }
 }

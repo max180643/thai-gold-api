@@ -12,15 +12,18 @@
   "author": "max180643 <max180643@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@fastify/cors": "7.0.0",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^10.0.0",
     "fastify": "^3.25.2",
-    "fastify-cors": "^6.0.2",
     "fastify-plugin": "^4.0.0",
-    "node-fetch": "2"
+    "node-fetch": "2",
+    "node-ts-cache": "^4.4.0",
+    "node-ts-cache-storage-memory": "^4.4.0"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.30",
+    "@types/fastify-cors": "^2.1.0",
     "@types/node": "^17.0.5",
     "@types/node-fetch": "2",
     "eslint": "^8.5.0",
