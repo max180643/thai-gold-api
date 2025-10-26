@@ -13,9 +13,9 @@ const PRICE_CONFIG = {
     GOLD_BAR_SELL:
       "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(1) > td:nth-child(2)",
     PRICE_COMPARE_PREVIOUS:
-      "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(3) > td.em.bg-em.al-l.g-d",
+      "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(3) > td.em.bg-em.al-l.g-u",
     PRICE_COMPARE_YESTERDAY:
-      "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(3) > td.span.bg-span.g-d",
+      "#rightCol > div.divgta.goldshopf > table > tbody > tr:nth-child(3) > td.span.bg-span.g-u",
   },
 };
 
