@@ -3,14 +3,15 @@ import fastify, {
   FastifyRequest,
   FastifyReply,
 } from "fastify";
-import fastifyCors from "fastify-cors";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import cors from "@fastify/cors";
 import priceRouters from "./routers/price";
 import track from "./plugins/track";
 
 const buildApp = (options: FastifyServerOptions) => {
   const app = fastify(options);
 
-  app.register(fastifyCors, {
+  app.register(cors, {
     origin: "*",
   });
 
@@ -19,8 +20,11 @@ const buildApp = (options: FastifyServerOptions) => {
   app.get("/", async (request: FastifyRequest, reply: FastifyReply) => {
     reply.code(200).send({
       status: "success",
-      response:
-        "Please go to https://github.com/max180643/thai-gold-api for API usage.",
+      response: {
+        folked: "PlutoPon",
+        docs: "https://github.com/PonlawatP/thai-gold-api for API usage.",
+        docs_n_credit: "https://github.com/max180643/thai-gold-api",
+      },
     });
   });
 
