@@ -9,17 +9,14 @@ API for checking latest Thai Gold prices
 ## Installation
 
 ```sh
-$ npm install
-$ npm run build
-$ npm run start
-```
+# Install dependencies
+pnpm install
 
-or
+# Build the project
+pnpm build
 
-```sh
-$ yarn
-$ yarn build
-$ yarn start
+# Run the development server
+pnpm dev
 ```
 
 ## API
