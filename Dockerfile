@@ -1,8 +1,8 @@
 FROM node:lts-alpine
 
-WORKDIR /usr/src/app
+RUN corepack enable
 
-RUN npm install -g pnpm
+WORKDIR /usr/src/app
 
 COPY package.json .
 COPY pnpm-lock.yaml .
